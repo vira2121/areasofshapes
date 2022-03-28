@@ -1,17 +1,15 @@
 def recarea():
-       length = int(input("enter the length of the rectangle : "))
-       breadth = int(input("enter the breadth of the rectangle : "))
+
        area = length * breadth
        print("Area of rectangle is : ",area)
 
 def recperi():
-       length = int(input("enter the length of the rectangle : "))
-       breadth = int(input("enter the breadth of the rectangle : "))
+
        peri = 2 * length * breadth
        print("Perimeter of rectangle is : ",peri)
 
 def squarea():
-       length = int(input("enter the length of the square : "))
+
        area = 4 * length
        print("Area of square is : ", area)
 
@@ -29,11 +27,17 @@ print("Menu-\n"
 x = int(input("Enter the corresponding choice : "))
 
 if x == 1:
+
+       length = int(input("enter the length of the rectangle : "))
+       breadth = int(input("enter the breadth of the rectangle : "))
        recarea()
 elif x==2:
+       length = int(input("enter the length of the rectangle : "))
+       breadth = int(input("enter the breadth of the rectangle : "))
        recperi()
 
 elif x==3:
+       length = int(input("enter the length of the square : "))
        squarea()
 
 else:
