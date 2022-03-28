@@ -1,46 +1,34 @@
-def recarea():
+def rectangle(a,b):
+    return a*b
 
-       area = length * breadth
-       print("Area of rectangle is : ",area)
+def perimeter_rect(a,b):
+    return 2*(a+b)
 
-def recperi():
-
-       peri = 2 * length * breadth
-       print("Perimeter of rectangle is : ",peri)
-
-def squarea():
-
-       area = 4 * length
-       print("Area of square is : ", area)
+def area_square(a):
+    return a*a
 
 
+if __name__=="__main__":
 
-print("Menu-\n"
+    check = 1
+    while check:
+        c = int(input("main menu \n 1) Find Area of rectangle\n 2) Find perimeter of Rectangle \n 3) Find Area of Square\n 4) Exit"))
 
-       "1. Area of Rectangle\n"
+        if c==1:
+            num1 = int(input("Enter the length of rectangle: "))
+            num2 = int(input("Enter the breadth of rectangle: "))
+            result = rectangle(num1,num2)
+            print(result)
 
-       "2. Perimeter of Rectangle\n"
-
-       "3. Area of Square\n")
-
-
-x = int(input("Enter the corresponding choice : "))
-
-if x == 1:
-
-       length = int(input("enter the length of the rectangle : "))
-       breadth = int(input("enter the breadth of the rectangle : "))
-       recarea()
-elif x==2:
-       length = int(input("enter the length of the rectangle : "))
-       breadth = int(input("enter the breadth of the rectangle : "))
-       recperi()
-
-elif x==3:
-       length = int(input("enter the length of the square : "))
-       squarea()
-
-else:
-
-   print("Wrong Input!")
-
+        elif c==2:
+            num1 = int(input("Enter the length of rectangle: "))
+            num2 = int(input("Enter the breadth of rectangle: "))
+            result1 = perimeter_rect(num1,num2)
+            print(result1)
+        elif c==3:
+            num1 = int(input("Enter side of square: "))
+            result2 = area_square(num1)
+            print(result2)
+        else:
+            check = 0
+            print("Exit")
